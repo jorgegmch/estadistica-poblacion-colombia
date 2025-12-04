@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef1f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #283593;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.buscador {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #283593;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1a237e;
+}
+
+.lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.card {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.error {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+}
+
+.oculto {
+    display: none;
+}

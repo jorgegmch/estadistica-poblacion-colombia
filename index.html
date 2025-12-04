@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Población de Colombia</title>
+</head>
+<body>
+    <header>
+        <h1>Estadísticas de Población de Colombia</h1>
+        <p>Consulta la población de cualquier departamento y sus municipios.</p>
+    </header>
+
+    <main>
+        <section class="buscador">
+            <input id="inputDepto" type="text" placeholder="Escribe un departamento... (ej: Antioquia)">
+            <button id="btnBuscar">Buscar</button>
+        </section>
+
+        <section id="resultado" class="oculto">
+            <h2 id="nombreDepto"></h2>
+            <p id="poblacionDepto"></p>
+            <p id="infoDepto"></p>
+
+            <h3>Municipios</h3>
+            <div id="listaMunicipios" class="lista"></div>
+        </section>
+
+        <section id="error" class="error oculto">
+            <p>No se encontró el departamento. Intenta con otro.</p>
+        </section>
+    </main>
+
+    <script src="poblacion-colombia.js"></script>
+</body>
+</html>
