@@ -9,6 +9,9 @@ const infoDepto = document.getElementById("infoDepto");
 const listaMunicipios = document.getElementById("listaMunicipios");
 
 btnBuscar.addEventListener("click", buscarDepartamento);
+inputDepto.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") buscarDepartamento();
+});
 
 function resetUI() {
     seccionResultado.classList.add("oculto");
@@ -23,6 +26,7 @@ async function buscarDepartamento() {
 const nombreRaw = inputDepto.value.trim();
 if (!nombreRaw) return;
 
+resetUI();
 
 try {
 
@@ -95,5 +99,3 @@ try {
     seccionError.textContent = "Ocurrió un error al consultar la API. Revisa la consola (F12).";
 }
 }
-
-
